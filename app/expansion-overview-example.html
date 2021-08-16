@@ -1,0 +1,26 @@
+
+  <mat-expansion-panel #panel mouseEnterLeaveDebounce
+  (debounceMouseEnter)="panel.open()"
+  (debounceMouseLeave)="panel.close()">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Personal data
+      </mat-panel-title>
+      <mat-panel-description>
+        Type your name and age
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <input matInput placeholder="First name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Age">
+    </mat-form-field>
+  </mat-expansion-panel>
+
+
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
